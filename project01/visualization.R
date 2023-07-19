@@ -1,2 +1,2 @@
 library(ggplot2)
-gplot(mpg, data=mtcars, geom="density")
+p1 = qplot(mpg, data=mtcars, geom="density")
