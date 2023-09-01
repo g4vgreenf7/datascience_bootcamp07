@@ -1,5 +1,5 @@
 #ATM_object
-class ATM():
+class ATM:
   def __init__(self, IDcard, PIN, bank, balance, phone):
     self.IDcard = IDcard
     self.PIN = PIN
@@ -44,23 +44,27 @@ class ATM():
     else:
       print("Your phone number didn't match for the account's phone number")
 
-  def check_if_exists1(x):
-    if x in QB_IDcards:
-        IDindex = QB_IDcards.index(x)
-        return IDindex+1
 
-  def check_if_exists2(y):
-    if y in QB_PINcards:
-        PINindex = QB_PINcards.index(y)
-        return PINindex+1
 #================================================
 #CardsDB
 person1 = ATM("5821146311", "001122", "QB", 35000,"0666666666")
 person2 = ATM("7242424209", "555555", "QB", 90000,"0911111111")
 person3 = ATM("8442121274", "123456", "QB", 145000,"0888888888")
 person4 = ATM("3453634634", "752244", "XXB", 2100000,"0111222333")
-persons = [person1, person2, person3,person4]
+persons = [person1, person2, person3, person4]
 
+def check_if_exists1(x):
+    if x in QB_IDcards:
+        IDindex = QB_IDcards.index(x)
+        return IDindex+1
+    else:
+      return 9999
+def check_if_exists2(y):
+    if y in QB_PINcards:
+        PINindex = QB_PINcards.index(y)
+        return PINindex+1
+    else:
+      return 1111
 QB_IDcards = []
 for i in range(len(persons)):
     QB_IDcards.append(persons[i].IDcard)
@@ -85,7 +89,7 @@ def QB_ATM():
     while status < 4:
       IDcheck = input(f"ID Card: ")
       PINcheck = input(f"6-Digit PIN: ")
-      if check_if_exists1(IDcheck) == check_if_exists2(PINcheck):
+      if check_if_exists1(IDcheck) != "9999" and check_if_exists1(IDcheck) == check_if_exists2(PINcheck):
         print("""ATM Function Codes
               #F1 Deposit money
               #F2 Withdraw money
@@ -133,3 +137,5 @@ def QB_ATM():
   else:
     print("_____________Thank_you_____________")
     print("*************************************")
+
+
