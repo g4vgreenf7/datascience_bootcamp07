@@ -1,0 +1,128 @@
+---
+title: "HW Data Viz 250223"
+author: "BY Ngame NG"
+date: "2023-02-28"
+output:
+  html_document: default
+  word_document: default
+---
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+head(diamonds)
+```
+
+
+### Chart#1 
+
+#### Relationship between carat and price
+
+
+```{r message=FALSE, warning=FALSE}
+set.seed(99)
+ggplot(diamonds %>% sample_n(5000), mapping = aes(x = carat, y = price, col = color)) +
+  geom_point(size = 2.5, alpha = 0.9) +
+  geom_smooth(method = "lm", col = "blue") +
+  scale_color_brewer(palette = "RdYlGn" ) +
+  theme_minimal() +
+  labs(title = "Carat VS Price")
+```
+*Note#1 :The relation between carat and price is positive.
+
+--------------------------------------------------------------
+
+
+### Chart#2 
+
+#### Relationship between clarity and cut
+
+![diamonds image](https://www.gloriousdiamonds.net/uploads/blog_th_gallery/%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%94%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3_2.jpg)
+
+
+```{r message=FALSE, warning=FALSE}
+
+ggplot(diamonds, mapping = aes(clarity, fill=cut))+
+  geom_bar(position="fill")+
+  theme_minimal()+
+  coord_polar(theta = "y")+
+  scale_fill_brewer(type="qual", palette = 3)+
+    labs(title = "Relationship between clarity and frequency of cut",
+       caption = "Data sauce : diamonds ggplot2")
+
+```
+
+*Note#2 :The clearer diamond clarity ,The cut will increase the frequency of ideal quality of diamonds even more.
+
+--------------------------------------------------------------
+
+
+### Chart#3
+
+#### Relationship between cut and price
+
+```{r message=FALSE, warning=FALSE}
+set.seed(50)
+ggplot(diamonds %>% sample_n(500), aes(cut,price)) +
+  geom_boxplot(fill = "#a8f6f5") +
+  theme_minimal()
+
+```
+
+*Note#3 :The cut quality of diamond doesn’t relate to diamond price.
+
+--------------------------------------------------------------
+
+
+### Chart#4
+
+#### Relationship between carat and clarity
+
+```{r message=FALSE, warning=FALSE}
+set.seed(99)
+diamonds_sample <- sample_frac(diamonds, 0.25)
+ggplot(diamonds_sample, aes(carat, price, col = clarity)) +
+  geom_point(alpha = 0.9) +
+  geom_smooth(method = "lm")+
+  scale_color_brewer(type="qual", palette =2)+
+  labs(title = "Relationship between carat and clarity",
+       caption = "Data sauce : diamonds ggplot2")
+
+```
+
+*Note#4 :When carat increase, price increase as well. The better clarity make slope grater,So price and carat has positive relationship.
+
+--------------------------------------------------------------
+
+
+### Chart#5
+
+#### Relationship between cut and color
+
+```{r message=FALSE, warning=FALSE}
+ggplot(diamonds, aes(cut, fill = color)) +
+  geom_bar(position = "fill") +
+  scale_fill_manual(values = c("#c48459","#c4596e","#c45959","#994646","#6f3232","#441f1f","#1a0c0c")) +
+  theme_minimal() +
+  labs(title = "100% stacked bar chart of cut and color",
+    subtitle ="Homework Data Viz - Chart 02",
+    x = "Cut",
+    y = "% of Total",
+    caption = "diamonds dataset")
+
+```
+
+*Note#5 :From chart,the proportion of color grouping by quality of the cut.
+
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+![diamonds image](https://spice4life.co.za/wp-content/uploads/2016/02/wqDEDR.png)
+--------------------------------------------------------------------
+![diamonds image](https://livedoor.blogimg.jp/tuyogaridokei/imgs/c/6/c613433e-s.jpg)
+
+
+Learn more..
+
+[Diamonds](https://en.wikipedia.org/wiki/Diamond)
