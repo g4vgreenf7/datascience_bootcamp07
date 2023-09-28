@@ -1,6 +1,7 @@
 -- สร้างdatabase restaurant.db 
 -- สร้างtable อย่างน้อย 5 tables
 -- เขียน3-5 queries มี 1 x WITH, 1 x Subqueries, 1 x Aggregate Functions + JOIN 
+-- https://replit.com/@Film007original/BootcampHomeworkSQL
 
 .open restaurant.db
 SELECT "-------------------------------------------------";
@@ -10,9 +11,7 @@ DROP TABLE dessertMENU;
 DROP TABLE staff;
 DROP TABLE member;
 DROP TABLE orders;
--- DROP TABLE payment;
 DROP TABLE invoices;
--- DROP TABLE voucher;
 
   -- create table foodMENU
 CREATE TABLE foodMENU (
