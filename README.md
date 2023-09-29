@@ -3,7 +3,7 @@ All my data projects in the bootcamp. There are 10 topics as follow
 
  - Google Sheet: https://bit.ly/3EYzQYw
    
- - SQL: https://bit.ly/45bueon
+ - SQL: https://replit.com/@Film007original/BootcampHomeworkSQL?v=1
    
  - R Programming
    - 01_Chatbot: https://replit.com/@Film007original/HW01-ChatBot?v=1
