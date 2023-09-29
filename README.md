@@ -35,4 +35,4 @@ All my data projects in the bootcamp. There are 10 topics as follow
 *Project01: https://bit.ly/48CwAj9
 
 
-##Certified Badge: https://bit.ly/3ZDFqce
+- **Certified Badge: https://bit.ly/3ZDFqce
