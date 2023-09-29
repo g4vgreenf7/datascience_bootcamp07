@@ -32,5 +32,7 @@ All my data projects in the bootcamp. There are 10 topics as follow
    - 02_LookerStudio: https://bit.ly/3tbH9th
    - 03_PowerBI: link in project01
 
-Project01: https://bit.ly/48CwAj9
-Certified Badge: https://bit.ly/3ZDFqce
+*Project01: https://bit.ly/48CwAj9
+
+
+##Certified Badge: https://bit.ly/3ZDFqce
