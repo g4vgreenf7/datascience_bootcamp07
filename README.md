@@ -18,9 +18,9 @@ All my data projects in the bootcamp. There are 10 topics as follow
  - Essential ML: link in project01
   
  - Python:
-   - 01_ChatbotGodsPizza: https://bit.ly/46sCukX
-   - 02_PaoYingChub: https://bit.ly/3RGT0d0
-   - 03_QB_ATM: https://bit.ly/459GgPa
+   - 01_ChatbotGodsPizza: https://replit.com/@Film007original/HW01ChatbotGodsPizza?v=1
+   - 02_PaoYingChub: https://replit.com/@Film007original/02PaoYingChub?v=1
+   - 03_QB_ATM: https://replit.com/@Film007original/HW03PTQBatm?v=1
    
  - Python for Analyst
    - 01_API: https://bit.ly/45aUf7g
