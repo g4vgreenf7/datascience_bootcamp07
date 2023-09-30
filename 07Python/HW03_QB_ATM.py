@@ -65,6 +65,7 @@ def check_if_exists2(y):
         return PINindex+1
     else:
       return 1111
+print("DB: QBank IDcard and PIN for testing")
 QB_IDcards = []
 for i in range(len(persons)):
     QB_IDcards.append(persons[i].IDcard)
@@ -79,6 +80,7 @@ print(QB_PINcards)
 def QB_ATM():
   status = 1
   fcode = " "
+  print("******************************")
   print("*****Welcome to QBANK ATM*****")
   print("(Insert the card and enter your pin)")
   print("______________Caution______________")
@@ -104,7 +106,7 @@ def QB_ATM():
               fcode = input("Function Code: ")
               if fcode == "F1":
                 print("===F1: Deposit money service===")
-                ATM.deposit()
+                persons[check_if_exists1(IDcheck)-1].deposit()
               elif fcode == "F2":
                 print("===F2: Withdraw money service===")
                 persons[check_if_exists1(IDcheck)-1].withdraw()
@@ -139,3 +141,4 @@ def QB_ATM():
     print("*************************************")
 
 
+QB_ATM()
