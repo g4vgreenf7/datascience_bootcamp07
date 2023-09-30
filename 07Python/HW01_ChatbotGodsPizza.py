@@ -9,54 +9,117 @@ def GodsPizza():
   KORpizza = ["(1)Dokkaebi"]
   AZTpizza = ["(1)Chantico", "(2)Quetzalcoatl"]
   while True:
-     orderYN = input("Do you want to order any godspizza?(Y/N): ") 
-     if orderYN == "Y":
-       print("GodsRegions: Chinese/Egyptain/Greek/Norse/Mesopotamian/Japanese/Korean/Aztec")
+     orderYN = input("Do you want to order any godspizza?(Y/N): ")
+     if orderYN == "Y" or orderYN == "y":
+       print("GodsRegions:\n 'Chinese'|'Egyptain'|'Greek'|'Norse'|\n'Mesopotamian'|'Japanese'|'Korean'|'Aztec'")
        orderRg = input("Input a god's region for run into menus: ")
+       
        if orderRg == "Chinese":
-        print("=Chinese godspizza MENU=")
-        print(CHNpizza)
-        orderPz = input("Which number do you want to order?")
-        requests.append(CHNpizza[int(orderPz)-1])
-       elif orderRg == "Egyptain":
-        print("=Egyptain godspizza MENU=")
-        print(EGYpizza)
-        orderPz = input("Which number do you want to order?")
-        requests.append(EGYpizza[int(orderPz)-1])
+          print("=Chinese godspizza MENU=")
+          print(CHNpizza)
+          orderPz = input("Which number do you want to order?")
+          while True:
+            if int(orderPz)<=len(CHNpizza) and int(orderPz)>0:
+              requests.append(CHNpizza[int(orderPz)-1])
+              print("Order success!")
+              break
+            else:
+              print("❌ Please choose again! a number for order this menu is wrong.")
+            orderPz = input("Which number do you want to order?")           
+       elif orderRg == "Egyptian":
+          print("=Egyptian godspizza MENU=")
+          print(EGYpizza)
+          orderPz = input("Which number do you want to order? ")
+          while True:
+            if int(orderPz)<=len(EGYpizza) and int(orderPz)>0:
+              requests.append(EGYpizza[int(orderPz)-1])
+              print("Order success!")
+              break
+            else:
+              print("❌ Please choose again! a number for order this menu is wrong.")
+            orderPz = input("Which number do you want to order?")
        elif orderRg == "Greek":
-        print("=Greek godspizza MENU=")
-        print(GRKpizza)
-        orderPz = input("Which number do you want to order? ")
-        requests.append(GRKpizza[int(orderPz)-1])
+          print("=Greek godspizza MENU=")
+          print(GRKpizza)
+          orderPz = input("Which number do you want to order? ")
+          while True:
+            if int(orderPz)<=len(GRKpizza) and int(orderPz)>0:
+              requests.append(GRKpizza[int(orderPz)-1])
+              print("Order success!")
+              break
+            else:
+              print("❌ Please choose again! a number for order this menu is wrong.")
+            orderPz = input("Which number do you want to order?")
        elif orderRg == "Norse":
-        print("=Norse godspizza MENU=")
-        print(NOSpizza)
-        orderPz = input("Which number do you want to order? ")
-        requests.append(NOSpizza[int(orderPz)-1])
+          print("=Norse godspizza MENU=")
+          print(NOSpizza)
+          orderPz = input("Which number do you want to order? ")
+          while True:
+            if int(orderPz)<=len(NOSpizza) and int(orderPz)>0:
+              requests.append(NOSpizza[int(orderPz)-1])
+              print("Order success!")
+              break
+            else:
+              print("❌ Please choose again! a number for order this menu is wrong.")
+            orderPz = input("Which number do you want to order?")
        elif orderRg == "Mesopotamian":
-        print("=Mesopotamian godspizza MENU=")
-        print(MSPpizza)
-        orderPz = input("Which number do you want to order? ")
-        requests.append(MSPpizza[int(orderPz)-1])
+          print("=Mesopotamian godspizza MENU=")
+          print(MSPpizza)
+          orderPz = input("Which number do you want to order? ")
+          while True:
+            if int(orderPz)<=len(MSPpizza) and int(orderPz)>0:
+              requests.append(MSPpizza[int(orderPz)-1])
+              print("Order success!")
+              break
+            else:
+              print("❌ Please choose again! a number for order this menu is wrong.")
+            orderPz = input("Which number do you want to order?")
        elif orderRg == "Japanese":
-        print("=Japanese godspizza MENU=")
-        print(JPNpizza)
-        orderPz = input("Which number do you want to order? ")
-        requests.append(JPNpizza[int(orderPz)-1])
+          print("=Japanese godspizza MENU=")
+          print(JPNpizza)
+          orderPz = input("Which number do you want to order? ")
+          while True:
+            if int(orderPz)<=len(JPNpizza) and int(orderPz)>0:
+              requests.append(JPNpizza[int(orderPz)-1])
+              print("Order success!")
+              break
+            else:
+              print("❌ Please choose again! a number for order this menu is wrong.")
+            orderPz = input("Which number do you want to order?")
        elif orderRg == "Korean":
-        print("=Korean godspizza MENU=")
-        print(KORpizza)
-        orderPz = input("Which number do you want to order? ")
-        requests.append(KORpizza[int(orderPz)-1])
+          print("=Korean godspizza MENU=")
+          print(KORpizza)
+          orderPz = input("Which number do you want to order? ")
+          while True:
+            if int(orderPz)<=len(KORpizza) and int(orderPz)>0:
+              requests.append(KORpizza[int(orderPz)-1])
+              print("Order success!")
+              break
+            else:
+              print("❌ Please choose again! a number for order this menu is wrong.")
+            orderPz = input("Which number do you want to order?")
        elif orderRg == "Aztec":
-        print("=Aztec godspizza MENU=")
-        print(AZTpizza)
-        orderPz = input("Which number do you want to order? ")
-        requests.append(AZTpizza[int(orderPz)-1])
+          print("=Aztec godspizza MENU=")
+          print(AZTpizza)
+          orderPz = input("Which number do you want to order? ")
+          while True:
+            if int(orderPz)<=len(AZTpizza) and int(orderPz)>0:
+              requests.append(AZTpizza[int(orderPz)-1])
+              print("Order success!")
+              break
+            else:
+              print("❌ Please choose again! a number for order this menu is wrong.")
+            orderPz = input("Which number do you want to order?")
        else:
-          print("Please select a region depend on our list")      
-     elif orderYN == "N":
-       return requests
+          print("Please select a region depend on our list")
+     elif orderYN == "N" or orderYN == "n":
+       print("📝Summary your order: ", requests)
+       print("Thank you for ordering")
+       print("************************")
+       break
      else:
-       print("Please input 'Y' or 'N'")  
-     requests.append(requests)  
+       print("Please input 'Y' or 'N'")
+
+
+
+GodsPizza()
