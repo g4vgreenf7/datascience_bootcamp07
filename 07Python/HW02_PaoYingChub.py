@@ -36,3 +36,6 @@ def playgame():
   print(f"🎉Congrats! You can score {point} points from {stage} games")
   print("Thank you for playing")
   print("*************************************")
+
+
+playgame()
