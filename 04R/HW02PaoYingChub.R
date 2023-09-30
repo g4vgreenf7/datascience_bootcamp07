@@ -22,7 +22,7 @@ play_game <- function() {
       }else if(text==bot){
         cat("DRAW")
       }else{
-        print("Your choice is incorrect, please choose again\n")
+        print("⚠️ Your choice is incorrect, please choose again\n")
       }
    }    
     if(text == "ss" | text == "hm" | text == "pp"){
@@ -33,8 +33,8 @@ play_game <- function() {
           cat("---FINISH---")
           break
     }
-  }
- stage <- stage+1     
+   stage <- stage+1    
+  }    
 }
   print("Thank you for playing")
   print(paste("🎉Congrats! You can score", point, "points,"))
