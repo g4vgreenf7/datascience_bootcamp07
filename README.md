@@ -28,12 +28,16 @@ All my data projects in the bootcamp. There are 10 topics as follow
  - Python for Analyst
    - 01_API: https://bit.ly/45aUf7g
    - 02_Sklearn: https://bit.ly/3LDCM0n
-
    
  - Dashboard
    - 01_Tableau: https://bit.ly/3LHePp4
    - 02_LookerStudio: https://bit.ly/3tbH9th
    - 03_PowerBI: https://bit.ly/3ROOLw2
 
--- *Project01: https://bit.ly/48CwAj9
--- **Certified Badge: https://bit.ly/3ZDFqce
+
+
+
+ - Result from this course
+   - *Project01: https://bit.ly/48CwAj9
+   - *Certified Badge: https://bit.ly/3ZDFqce
+
