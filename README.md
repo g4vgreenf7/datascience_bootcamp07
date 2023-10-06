@@ -30,7 +30,7 @@ All my data projects in the bootcamp. There are 10 topics as follow
  - Dashboard
    - 01_Tableau: https://bit.ly/3LHePp4
    - 02_LookerStudio: https://bit.ly/3tbH9th
-   - 03_PowerBI: link in project01
+   - 03_PowerBI: https://bit.ly/3ROOLw2
 
 *Project01: https://bit.ly/48CwAj9
 
