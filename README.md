@@ -14,7 +14,7 @@ All my data projects in the bootcamp. There are 10 topics as follow
    - 02_WebScrapping_StatisticWeb: https://bit.ly/46soLdO
 
  - Data Visualization: https://posit.cloud/content/6727767
-   or: https://drive.google.com/file/d/1iq7ozO1_QAfmi_mHsainB1taVIuUWCrv/view?usp=sharing
+   - or: https://bit.ly/3RRQLDB
  
  - Essential Statistics: link in project01 
   
@@ -35,7 +35,5 @@ All my data projects in the bootcamp. There are 10 topics as follow
    - 02_LookerStudio: https://bit.ly/3tbH9th
    - 03_PowerBI: https://bit.ly/3ROOLw2
 
-*Project01: https://bit.ly/48CwAj9
-
-
-- **Certified Badge: https://bit.ly/3ZDFqce
+-- *Project01: https://bit.ly/48CwAj9
+-- **Certified Badge: https://bit.ly/3ZDFqce
