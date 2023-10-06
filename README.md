@@ -13,6 +13,9 @@ All my data projects in the bootcamp. There are 10 topics as follow
    - 01_WebScrapping_IMDB: https://bit.ly/3EZx59o
    - 02_WebScrapping_StatisticWeb: https://bit.ly/46soLdO
 
+ - Data Visualization: https://posit.cloud/content/6727767
+   or: https://drive.google.com/file/d/1iq7ozO1_QAfmi_mHsainB1taVIuUWCrv/view?usp=sharing
+ 
  - Essential Statistics: link in project01 
   
  - Essential ML: link in project01
